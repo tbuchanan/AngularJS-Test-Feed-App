@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Feed App</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+</head>
+<body ng-app="FeedApp">
+	<div class="container">
+		<div class="jumbotron">
+			<h2>Top 3 Entries</h2>
+			<div ng-controller="NewsCtrl">
+				<div ng-repeat="new in news">
+					<h3 ng-repeat="entry in new.entries" ng-if="$index < 3">
+						<a href="#" ng-click="show = !show">{{entry.title}}</a>
+						<p class="news-entries" ng-show="show">
+							{{entry.body}}
+						</p>
+					</h3>
+				</div> <!-- new in news -->
+			</div> <!-- NewsCtrl -->
+		</div> <!-- jumbotron -->
+	</div> <!-- container -->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="app/javascripts/main.js"></script>
+</body>
+</html>

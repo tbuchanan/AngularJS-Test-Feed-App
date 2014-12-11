@@ -1,0 +1,27 @@
+{	
+	"entries": 
+	[
+		
+		{
+			"title": "tacos",
+			"body": "story about tacos"
+		},
+		{
+			"title": "salsa",
+			"body": "story about salsa"
+		},
+		{
+			"title": "burritos",
+			"body": "story about burritos"
+		},
+		{
+			"title": "quesadillas",
+			"body": "story about quesadillas"
+		},
+		{
+			"title": "papusas",
+			"body": "story about papusas"
+		}
+	
+	]
+}
